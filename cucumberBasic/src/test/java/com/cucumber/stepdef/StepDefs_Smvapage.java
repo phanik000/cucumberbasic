@@ -55,7 +55,7 @@ public class StepDefs_Smvapage {
 	public void user_should_able_to_login_sucessfully() throws Throwable {
 		String sackalertpagetitle = driver.getTitle();
 		System.out.println("login sucessfull and title is :" + sackalertpagetitle);
-System.out.println("hi");
+
 	}
 
 }
