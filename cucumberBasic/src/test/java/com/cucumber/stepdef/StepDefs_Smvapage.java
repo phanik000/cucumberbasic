@@ -33,11 +33,11 @@ public class StepDefs_Smvapage {
 
 	}
 
-	@When("^I enter valid username and password$")
-	public void i_enter_valid_username_and_password() throws Throwable {
-		driver.findElement(By.xpath("//input[@id='MainContent_Email']")).sendKeys("manikanta.n@maktronglobal.com");
+	@When("^I enter valid username (.*) and password (.*)$")
+	public void i_enter_valid_username_and_password(String uname,String password) throws Throwable {
+		driver.findElement(By.xpath("//input[@id='MainContent_Email']")).sendKeys(uname);
 
-		driver.findElement(By.xpath("//input[@id='MainContent_Password']")).sendKeys("Maktron@123");
+		driver.findElement(By.xpath("//input[@id='MainContent_Password']")).sendKeys(password);
 
 		
 
